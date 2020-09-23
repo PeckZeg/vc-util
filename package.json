@@ -1,6 +1,6 @@
 {
   "name": "@ayase/vc-util",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Common Utils For Vue 3 Component",
   "author": "PeckZeg <peck.zeg@gmail.com>",
   "license": "MIT",
