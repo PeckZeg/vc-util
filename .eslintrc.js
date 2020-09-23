@@ -44,7 +44,14 @@ module.exports = {
     // https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/html-indent.md
     'vue/html-indent': ['error', 2],
 
-    'vue/max-attributes-per-line': ['warn', { singleline: 2 }],
+    // https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html
+    'vue/singleline-html-element-content-newline': 'off',
+
+    // https://eslint.vuejs.org/rules/max-attributes-per-line.html
+    'vue/max-attributes-per-line': 'off',
+
+    // https://eslint.vuejs.org/rules/no-multiple-template-root.html
+    'vue/no-multiple-template-root': 'off',
 
     'vue/html-self-closing': [
       'warn',
