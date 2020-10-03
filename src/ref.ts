@@ -1,6 +1,14 @@
 import { VNodeNormalizedRef, VNodeRef } from './types';
 
-import { getCurrentInstance, watch, ref } from 'vue';
+import { Ref, getCurrentInstance, isRef } from 'vue';
+
+export function fillRef<T>(ref: Ref<T> | Function, node: T) {
+  if (typeof ref === 'function') {
+    ref(node);
+  } else if (isRef(ref)) {
+    ref.value = node;
+  }
+}
 
 /**
  * Merge refs into one ref function to support ref passing.
